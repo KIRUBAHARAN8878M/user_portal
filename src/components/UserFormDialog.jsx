@@ -25,10 +25,11 @@ const UserFormDialog = ({ open, onClose, isEdit, initialData, onSave }) => {
         <Dialog open={open} onClose={onClose}>
             <DialogTitle>{isEdit ? "Edit User" : "Add User"}</DialogTitle>
             <DialogContent>
+            {/* Formik integration for handling form state, validation, and submission */}
                 <Formik
-                    initialValues={initialValues}
-                    validationSchema={validationSchema}
-                    onSubmit={onSave}
+                    initialValues={initialValues} // Prepopulate form for editing
+                    validationSchema={validationSchema} // Schema to validate input fields
+                    onSubmit={onSave} // Callback to handle form submission
                 >
                     {({
                         values,

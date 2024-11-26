@@ -6,6 +6,7 @@ import UserFormDialog from "./components/UserFormDialog";
 import ActionButton from "./components/ActionButton";
 import { fetchUsers, addUser, updateUser, deleteUser } from "./services/api";
 
+// Configure a dark theme using Material-UI's createTheme
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -30,10 +31,11 @@ function App() {
   const [open, setOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
+  // State to manage notifications
   const [notification, setNotification] = useState({
-    open: false,
-    message: "",
-    severity: "success",
+    open: false, // Visibility of the notification
+    message: "", // Notification text
+    severity: "success", // Notification type: success, error, info, or warning
   });
 
   useEffect(() => {
@@ -48,10 +50,12 @@ function App() {
     loadUsers();
   }, []);
 
+  // Show notification with a custom message and severity
   const showNotification = (message, severity = "success") => {
     setNotification({ open: true, message, severity });
   };
 
+  // Opens the user form dialog in either add or edit mode
   const handleOpenDialog = (user = null) => {
     setIsEdit(Boolean(user));
     setCurrentUser(user);
@@ -94,6 +98,7 @@ function App() {
   };
 
   return (
+    // Wrap the app with ThemeProvider to apply the theme globally
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ flexGrow: 1, padding: 2 }}>
         <Typography variant="h5" gutterBottom>

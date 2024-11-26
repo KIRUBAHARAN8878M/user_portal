@@ -15,15 +15,17 @@ import "../styles/App.css";
 
 const UserTable = ({ users, onEdit, onDelete }) => {
     return (
+        // TableContainer with sticky header and scrollable body for better UX
         <TableContainer
             component={Paper}
             className="table-container"
             sx={{
                 maxHeight: "500px",
-                overflowY: "auto",
+                overflowY: "auto", // Enables scrolling for table content
                 backgroundColor: "background.paper",
             }}
         >
+            {/* Table with sticky header and scrollable body for better user experience */}
             <Table stickyHeader>
                 <TableHead>
                     <TableRow sx={{ backgroundColor: "#333" }}>

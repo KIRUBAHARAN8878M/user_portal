@@ -124,6 +124,6 @@ src/
 ---
 
 ## Author
-Developed by [KIRUBAHARAN M].
+Developed by - KIRUBAHARAN M .
 
-For any questions or issues, feel free to contact me at [kirubaharan8878m@example.com].
+For any questions or issues, feel free to contact me at - kirubaharan8878m@example.com.
