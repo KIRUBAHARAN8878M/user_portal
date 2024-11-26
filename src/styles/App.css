@@ -1,0 +1,22 @@
+/* Add this CSS to App.css or your global styles file */
+.table-container::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #555;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded edges */
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    /* Hover color */
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #333;
+    /* Color of the scrollbar track */
+}
