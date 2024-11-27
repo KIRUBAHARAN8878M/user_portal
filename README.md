@@ -30,7 +30,7 @@ The **User Management Dashboard** is a React-based application that allows CRUD 
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. Open your browser and navigate to:
@@ -126,4 +126,4 @@ src/
 ## Author
 Developed by - KIRUBAHARAN M .
 
-For any questions or issues, feel free to contact me at - kirubaharan8878m@example.com.
+For any questions or issues, feel free to contact me at - kirubaharan8878m@gmail.com.
